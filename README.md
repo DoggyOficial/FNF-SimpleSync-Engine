@@ -1,1 +1,3 @@
 # FNF-SimpleSync-Engine
+
+Here are important things for the functioning of the engine, so feel free to read whatever you want, to understand a little more about perhaps...
