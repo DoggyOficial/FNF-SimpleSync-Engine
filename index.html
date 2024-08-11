@@ -6,6 +6,16 @@
     <title>Exemplo de Texto</title>
 </head>
 <body>
-    <p>1.0</p>
+    <p id="time">1.0</p>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').innerText = now.toLocaleTimeString();
+        }
+
+        // Atualiza o conteúdo a cada segundo
+        setInterval(updateTime, 1000);
+    </script>
 </body>
 </html>
