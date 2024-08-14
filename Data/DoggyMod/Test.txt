@@ -1,1 +1,0 @@
-SongName: Test, Characters: Bf-Dad-Gf, SongBPM: 100, SongSpeed: 1.6, Difficuty: Normal

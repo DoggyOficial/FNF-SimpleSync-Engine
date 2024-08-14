@@ -1,1 +1,0 @@
-SongName: GGG, Characters: Bf-Dad-None, SongBPM: 100, SongSpeed: 1.6, Difficuty: Normal
