@@ -1,1 +1,0 @@
-SongName: DadBattle, Characters: Bf-Dad-Gf, SongBPM: 100, SongSpeed: 2, Difficuty: Normal
