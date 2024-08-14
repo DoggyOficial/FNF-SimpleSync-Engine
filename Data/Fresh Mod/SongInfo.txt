@@ -1,0 +1,1 @@
+SongName: Fresh, Characters: Bf-Dad-Gf, SongBPM: 140, SongSpeed: 1.5, Difficuty: Normal
