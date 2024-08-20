@@ -58,43 +58,45 @@
 </head>
 <body>
 
-    <button id="closeButton" onclick="closePage()">Close</button>
+    <button id="closeButton" onclick="closeContent()">Close</button>
 
-    <h1>Event Documentation</h1>
+    <div id="content">
+        <h1>Event Documentation</h1>
 
-    <ul>
-        <li>
-            <span class="api-name">SetCamera:</span>
-            <span class="api-description">Set the camera</span>
-        </li>
-        <li>
-            <span class="api-name">< Player ></span>
-            <span class="api-description">Get the player</span>
-        </li>
-		<li>
-            <span class="api-name">< Opponent ></span>
-            <span class="api-description">Get the Opponent</span>
-        </li>
-        <!-- Adicione mais APIs aqui -->
-    </ul>
-	
-	<h1>Event examples</h1>
+        <ul>
+            <li>
+                <span class="api-name">SetCamera:</span>
+                <span class="api-description">Set the camera</span>
+            </li>
+            <li>
+                <span class="api-name">< Player ></span>
+                <span class="api-description">Get the player</span>
+            </li>
+            <li>
+                <span class="api-name">< Opponent ></span>
+                <span class="api-description">Get the Opponent</span>
+            </li>
+            <!-- Adicione mais APIs aqui -->
+        </ul>
+        
+        <h1>Event examples</h1>
 
-    <ul>
-        <li>
-            <span class="api-name">SetCamera:< Player ></span>
-            <span class="api-description">Change the camera to the player</span>
-        </li>
-		<li>
-            <span class="api-name">SetCamera:< Opponent ></span>
-            <span class="api-description">Change the camera to the Opponent</span>
-        </li>
-        <!-- Adicione mais APIs aqui -->
-    </ul>
+        <ul>
+            <li>
+                <span class="api-name">SetCamera:< Player ></span>
+                <span class="api-description">Change the camera to the player</span>
+            </li>
+            <li>
+                <span class="api-name">SetCamera:< Opponent ></span>
+                <span class="api-description">Change the camera to the Opponent</span>
+            </li>
+            <!-- Adicione mais APIs aqui -->
+        </ul>
+    </div>
 
     <script>
-        function closePage() {
-            document.body.style.display = 'none';
+        function closeContent() {
+            document.getElementById('content').style.display = 'none';
         }
     </script>
 
