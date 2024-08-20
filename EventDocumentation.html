@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        li {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        li .api-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+        li .api-description {
+            color: #555;
+        }
+        #closeButton {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #closeButton:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="closeButton" onclick="closeWindow()">Close</button>
+
+    <h1>Event Documentation</h1>
+
+    <ul>
+        <li>
+            <span class="api-name">SetCamera:</span>
+            <span class="api-description">Set the camera</span>
+        </li>
+        <li>
+            <span class="api-name">< Player ></span>
+            <span class="api-description">Get the player</span>
+        </li>
+		<li>
+            <span class="api-name">< Opponent ></span>
+            <span class="api-description">Get the Opponent</span>
+        </li>
+        <!-- Adicione mais APIs aqui -->
+    </ul>
+	
+	<h1>Event examples</h1>
+
+    <ul>
+        <li>
+            <span class="api-name">SetCamera:< Player ></span>
+            <span class="api-description">Change the camera to the player</span>
+        </li>
+		<li>
+            <span class="api-name">SetCamera:< Opponent ></span>
+            <span class="api-description">Change the camera to the Opponent</span>
+        </li>
+        <!-- Adicione mais APIs aqui -->
+    </ul>
+
+    <script>
+        function closeWindow() {
+            // Fecha a janela se ela foi aberta via window.open()
+            window.close();
+        }
+    </script>
+
+</body>
+</html>
