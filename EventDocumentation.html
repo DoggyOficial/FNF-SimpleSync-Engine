@@ -58,7 +58,7 @@
 </head>
 <body>
 
-    <button id="closeButton" onclick="closeWindow()">Close</button>
+    <button id="closeButton" onclick="closePage()">Close</button>
 
     <h1>Event Documentation</h1>
 
@@ -93,9 +93,8 @@
     </ul>
 
     <script>
-        function closeWindow() {
-            // Fecha a janela se ela foi aberta via window.open()
-            window.close();
+        function closePage() {
+            document.body.style.display = 'none';
         }
     </script>
 
