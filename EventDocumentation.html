@@ -54,6 +54,18 @@
         #closeButton:hover {
             background-color: #c82333;
         }
+        .copy-button {
+            margin-left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -71,23 +83,43 @@
             <span class="api-name">< Player ></span>
             <span class="api-description">Get the player</span>
         </li>
-		<li>
+        <li>
             <span class="api-name">< Opponent ></span>
             <span class="api-description">Get the Opponent</span>
         </li>
+	<li>
+            <span class="api-name">< Gf ></span>
+            <span class="api-description">Get the Gf</span>
+        </li>
+	<li>
+            <span class="api-name">< Custom ></span>
+            <span class="api-description">Get a custom value</span>
+        </li>
         <!-- Adicione mais APIs aqui -->
     </ul>
-	
-	<h1>Event examples</h1>
+
+    <h1>Event examples</h1>
 
     <ul>
         <li>
             <span class="api-name">SetCamera:< Player ></span>
             <span class="api-description">Change the camera to the player</span>
+            <button class="copy-button" onclick="copyToClipboard('SetCamera:< Player >')">COPY</button>
         </li>
-		<li>
+        <li>
             <span class="api-name">SetCamera:< Opponent ></span>
             <span class="api-description">Change the camera to the Opponent</span>
+            <button class="copy-button" onclick="copyToClipboard('SetCamera:< Opponent >')">COPY</button>
+        </li>
+	<li>
+            <span class="api-name">SetCamera:< Gf ></span>
+            <span class="api-description">Change the camera to the Gf</span>
+            <button class="copy-button" onclick="copyToClipboard('SetCamera:< Gf >')">COPY</button>
+        </li>
+	<li>
+            <span class="api-name">SetCamera:< Custom{X:100}{Y:200} ></span>
+            <span class="api-description">Change the camera to the custom Position</span>
+            <button class="copy-button" onclick="copyToClipboard('SetCamera:< Custom{X:100}{Y:200} >')">COPY</button>
         </li>
         <!-- Adicione mais APIs aqui -->
     </ul>
@@ -96,6 +128,14 @@
         function closeWindow() {
             // Fecha a janela se ela foi aberta via window.open()
             window.close();
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied: ' + text);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
         }
     </script>
 
